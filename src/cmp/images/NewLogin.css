@@ -1,0 +1,315 @@
+*{
+    font-family: poppins, sans-serif;
+}
+body{
+margin: 0;
+font-family: poppins, sans-serif;
+font-size: 1rem;
+font-weight: 400;
+line-height: 1.5;
+color: #212529;
+text-align: left;
+/* background-color: #fff; */
+}
+
+.fixed-background {
+    background: url(./balloon.jpg) no-repeat 50% fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+body.background main .container {
+    height: 100%;
+}
+
+.container {
+    margin-top: 8%;
+    margin-bottom: 5%;
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.auth-card {
+    display: flex;
+    flex-direction: row;
+    border: none;
+    box-shadow: 0 1px 15px rgb(0 0 0 / 4%), 0 1px 6px rgb(0 0 0 / 4%);
+}
+
+
+
+  .auth-card {
+    border-top-left-radius: 1.9rem;
+    border-bottom-left-radius: 1.9rem;
+    border-bottom-right-radius: 1.9rem;
+    border-top-right-radius: 1.9rem;
+}
+
+ 
+.auth-card .image-side {
+    width: 40%;
+    background: url(./balloon.jpg) no-repeat top;
+    background-size: cover;
+    padding: 80px 40px;
+}
+.auth-card .image-side {
+    border-top-left-radius: 1.75rem;
+    border-bottom-left-radius: 1.75rem;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.auth-card .form-side {
+    width: 60%;
+    padding: 80px;
+    
+}
+
+.white {
+    color: #fff!important;
+}
+
+.logo-single {
+    width: 110px;
+    height: 35px;
+    background: url(./gogo_logo.svg) no-repeat;
+    background-position: 50%;
+    display: inline-block;
+    margin-bottom: 60px;
+}
+
+.card-title {
+    font-size: 1.1rem;
+}
+
+form {
+    display: block;
+    margin-top: 0;
+}
+
+.has-float-label {
+    display: block;
+    position: relative;
+}
+.form-group {
+    margin-bottom: 1rem;
+    position: relative;
+}
+.has-float-label>span:last-of-type, .has-float-label label {
+    position: absolute;
+    cursor: text;
+    font-size: 65%;
+    opacity: 1;
+    top: -.4em;
+    left: .75rem;
+    z-index: 3;
+    line-height: 1;
+    padding: 0 1px;
+}
+.has-float-label>span, .has-float-label label, .has-top-label>span, .has-top-label label {
+    color: rgba(58,58,58,.7);
+}
+label {
+    display: inline-block;
+    margin-bottom: .5rem;
+}
+
+.has-float-label>span:after, .has-float-label label:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    height: 5px;
+    top: 3px;
+    left: -.2em;
+    right: -.2em;
+    z-index: -1;
+}
+.has-float-label>span:after, .has-float-label label:after {
+    background: #fff!important;
+}
+
+.form-control {
+    border-radius: .1rem;
+    outline: initial!important;
+    box-shadow: none!important;
+    font-size: .8rem;
+    border: 1px solid #d7d7d7;
+    background: #fff;
+    color: #3a3a3a;
+    height: auto;
+    padding: .5rem .75rem;
+    line-height: 1;
+}
+.form-control:focus {
+    border-color: rgba(0,54,90,.6);
+    background-color: none;
+}
+.form-control:active {
+    background-color: none;
+}
+.form-control::placeholder{
+    font-size: .6rem;
+}
+.invalid-feedback {
+    border-radius: .1rem;
+    padding: .5rem 1rem;
+    font-size: .76rem;
+    color: #3a3a3a;
+    background: #fff;
+    border: 1px solid #00365a;
+    text-align: center;
+    width: unset!important;
+    position: absolute;
+    z-index: 4;
+    margin-top: -.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 1px 15pxrgba(0,0,0,.04),0 1px 6px rgba(0,0,0,.04);
+}
+.invalid-feedback:after, .invalid-feedback:before {
+    content: "";
+    position: absolute;
+    left: -2.5px;
+    margin-left: 50%;
+    width: 10px;
+    height: 5px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+}
+.invalid-feedback:before {
+    top: -5px;
+    border-bottom: 5px solid #00365a;
+
+}
+.invalid-feedback, .valid-tooltip, div.error {
+    border-radius: 10px;
+}
+a {
+    color: #3a3a3a;
+    transition: color .2s;
+    text-decoration: none;
+    background-color: initial;
+    
+}
+
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    cursor: pointer;
+}
+.btn-multiple-state {
+    position: relative;
+    transition: opacity .5s;
+}
+.btn-group-lg>.btn, .btn-lg {
+    line-height: 1.5;
+    font-weight: 700;
+    letter-spacing: .05rem;
+    font-size: 0.8rem;
+    padding: .6rem 2.5rem;
+}
+.btn {
+    background-color: #00365a;
+    border-color: #00365a;
+    color: #fff;
+}
+.btn-multiple-state .spinner {
+    width: 36px;
+    text-align: center;
+}
+.btn:hover {
+    color: #fff;
+    background-color: #001e31;
+    border-color: #001e31;
+}
+.btn-group-lg>.btn, .btn-group-sm>.btn, .btn-lg {
+    border-radius: 50px;
+}
+.btn-shadow {
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.15),0 1px 3px 1px rgba(0,0,0,.15)!important;
+}
+
+
+
+.btn-multiple-state .spinner {
+    width: 36px;
+    text-align: center;
+}
+
+.btn-multiple-state .icon, .btn-multiple-state .spinner {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    opacity: 0;
+    visibility: hidden;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: opacity .5s;
+    color: #fff;
+}
+
+
+.btn-multiple-state .spinner>span {
+    width: 6px;
+    height: 6px;
+    background-color: #fff;
+    border-radius: 100%;
+    display: inline-block;
+    animation: sk-bouncedelay 1.2s ease-in-out infinite both;
+}
+
+
+.btn-multiple-state .label {
+    transition: opacity .5s;
+    transition-property: opacity;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+
+@media screen and (max-width: 991px){
+    .container {
+        max-width: 720px;
+    }
+.auth-card .form-side, .auth-card .image-side {
+    width: 100%;
+    padding: 60px;
+}
+
+p {
+    font-size: .85rem;
+    line-height: 1.3rem;
+    font-family: "Nunito",sans-serif;
+}
+
+.auth-card{
+    flex-direction: column;
+}
+ .auth-card .image-side {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: .75rem;
+    border-top-right-radius: .75rem;
+}
+
+.card.auth-card {
+    border-top-left-radius: 1.25rem;
+    border-top-right-radius: 1.25rem;
+    border-bottom-right-radius: .75rem;
+    border-bottom-left-radius: .75rem;
+}
+}
