@@ -1,0 +1,38 @@
+.modal_styles  {
+    position:fixed;
+    top:0%;
+    right:0%;
+    transform:trasnlate(-50%, -50%);
+    background-color:white;
+    padding:50px;
+    z-index:1000;
+    width:30%;
+    height: 100%;
+    opacity: 0;
+    animation-delay: 1s;
+    -webkit-animation: fadeIn 400ms linear forwards;
+    animation: fadeIn 400ms linear forwards;
+    
+   }
+   
+   @-webkit-keyframes fadeIn {
+    0%,100% {opacity: 0;}
+    30%, 80% {opacity: 1;}
+   }
+   @keyframes fadeIn {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+    }
+    
+.edit-icon {
+    border: none;
+    background-color: transparent;
+   
+}
+
+.card_details {
+   
+    margin: 10px;
+    word-break: break-all;
+    width: 150px;
+}

@@ -1,13 +1,16 @@
 // import  Login  from "./cmp/images/Login";
 import Sidebar from "./cmp/Sidebar/Sidebar";
-import {BrowserRouter, Routes,Route, } from 'react-router-dom'
+// import {BrowserRouter, Routes,Route, } from 'react-router-dom'
 import React, {useState} from 'react'
+
+import Hompage from "./cmp/Pages/Hompage";
+// import Dashboard from "./cmp/Pages/Hompage";
 
 function App(){
 
     const [mode, setMode] = useState({
         color:"black",
-        backgroundColor:"white"
+        backgroundColor:"whitesmoke"
     })
 
 const toggleMode = ()=> {
@@ -25,15 +28,13 @@ const toggleMode = ()=> {
 }
 return(
 <>
-
+{/* <Hompage/> */}
 {/* <Sidebar/> */}
 {/* <Login/> */}
 
-<BrowserRouter>
-<Routes>
-    <Route path="/" element={<Sidebar mode={mode} toggleMode={toggleMode}/>}/>
-</Routes>
-</BrowserRouter>
+
+<Sidebar mode={mode} toggleMode={toggleMode}/>
+
 </>
 
 
